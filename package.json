@@ -1,0 +1,26 @@
+{
+  "name": "stopwords-no",
+  "version": "0.1.0",
+  "author": "Gene Diaz <genediazjr@gmail.com> (http://genediazjr.com)",
+  "description": "The most comprehensive collection of stopwords for the norwegian language.",
+  "keywords": [
+    "norwegian",
+    "stopwords",
+    "stop words"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/stopwords-iso/stopwords-no",
+  "bugs": "https://github.com/stopwords-iso/stopwords-no/issues",
+  "main": "stopwords-no.json",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "stopwords-collator -s raw -o stopwords-no",
+    "test": "npm run build && jsonlint stopwords-no.json -q"
+  },
+  "devDependencies": {
+    "stopwords-collator": "*",
+    "jsonlint": "1.6.x"
+  }
+}
